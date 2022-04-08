@@ -45,7 +45,7 @@ def search_station(tmX, tmY):
     urlencode({ quote_plus('returnType') : 'xml',
                 quote_plus('tmX') : tmX,
                 quote_plus('tmY') : tmY })
-    print(url + params2)
+    #print(url + params2)
 
     request = Request(url + params2)
     request.get_method = lambda: 'GET'

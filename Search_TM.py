@@ -19,7 +19,7 @@ def search_TM():
     urlencode({ quote_plus('returnType') : 'xml',
                 quote_plus('umdName') : umdName,
                 quote_plus('ver') : '1.0' })
-    print(url + params3)
+    #print(url + params3)
 
     request = Request(url + params3)
     request.get_method = lambda: 'GET'

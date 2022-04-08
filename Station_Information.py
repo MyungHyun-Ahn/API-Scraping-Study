@@ -21,7 +21,7 @@ def station_info(stationName_list):
         params3 = '?' + 'ServiceKey=' + key + '&' + \
         urlencode({ quote_plus('returnType') : 'json',
                     quote_plus('stationName') : stationName })
-        print(url + params3)
+        #print(url + params3)
 
         request = Request(url + params3)
         request.get_method = lambda: 'GET'
