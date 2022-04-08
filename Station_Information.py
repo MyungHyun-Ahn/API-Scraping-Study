@@ -32,7 +32,8 @@ def station_info(stationName_list):
         si_df = pd.json_normalize(data['response']['body']['items'])
 
         info_df = info_df.append(si_df, ignore_index=True)
-    
+
+    info_df = info_df[['stationName', 'mangName', 'item', 'addr', 'year', 'dmX', 'dmY']]
     return info_df
 
 
