@@ -8,8 +8,11 @@ from urllib.request import Request, urlopen
 from urllib.parse import urlencode, quote_plus
 import pandas as pd
 
+import warnings
+
 from xml.etree import ElementTree
 
+warnings.filterwarnings("ignore")
 
 # .gitignore 파일에 추가하여 내 컴퓨터에서만 볼수있음.
 from secretkey import key
