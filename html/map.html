@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b876dd1050304116aa174dca28e74930 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b876dd1050304116aa174dca28e74930" ></div>
+        
+</body>
+<script>    
+    
+            var map_b876dd1050304116aa174dca28e74930 = L.map(
+                "map_b876dd1050304116aa174dca28e74930",
+                {
+                    center: [37.627132333333336, 127.05675333333333],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_96b8b61646ae480ab9d13e054f88327e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b876dd1050304116aa174dca28e74930);
+        
+    
+            var marker_f0abcafa27d64b9f8ad60d6606e88ed2 = L.marker(
+                [37.617315, 127.07512],
+                {}
+            ).addTo(map_b876dd1050304116aa174dca28e74930);
+        
+    
+            var icon_314d6ab01bb4429899dc482679285c8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f0abcafa27d64b9f8ad60d6606e88ed2.setIcon(icon_314d6ab01bb4429899dc482679285c8a);
+        
+    
+        var popup_53a39cf19bc54a7ea150ba102cf20d6f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a3c018729ae485abe6153edca428f3f = $(`<div id="html_2a3c018729ae485abe6153edca428f3f" style="width: 100.0%; height: 100.0%;">화랑로 측정소</div>`)[0];
+            popup_53a39cf19bc54a7ea150ba102cf20d6f.setContent(html_2a3c018729ae485abe6153edca428f3f);
+        
+
+        marker_f0abcafa27d64b9f8ad60d6606e88ed2.bindPopup(popup_53a39cf19bc54a7ea150ba102cf20d6f)
+        ;
+
+        
+    
+    
+            var marker_a0b61714994d470a9c35537b7adf2482 = L.marker(
+                [37.606667, 127.027264],
+                {}
+            ).addTo(map_b876dd1050304116aa174dca28e74930);
+        
+    
+            var icon_17e30c58dbb7418791d230700fab642d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a0b61714994d470a9c35537b7adf2482.setIcon(icon_17e30c58dbb7418791d230700fab642d);
+        
+    
+        var popup_0cf41c4c8c9540fd995d1bf2509d162d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0cbe31cd262940f7baac3743e6fc5b0a = $(`<div id="html_0cbe31cd262940f7baac3743e6fc5b0a" style="width: 100.0%; height: 100.0%;">성북구 측정소</div>`)[0];
+            popup_0cf41c4c8c9540fd995d1bf2509d162d.setContent(html_0cbe31cd262940f7baac3743e6fc5b0a);
+        
+
+        marker_a0b61714994d470a9c35537b7adf2482.bindPopup(popup_0cf41c4c8c9540fd995d1bf2509d162d)
+        ;
+
+        
+    
+    
+            var marker_0389f212c39e477c80a3df80d004ccf9 = L.marker(
+                [37.657415, 127.067876],
+                {}
+            ).addTo(map_b876dd1050304116aa174dca28e74930);
+        
+    
+            var icon_86803927d59e4627b15e2b0379c3f3c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0389f212c39e477c80a3df80d004ccf9.setIcon(icon_86803927d59e4627b15e2b0379c3f3c5);
+        
+    
+        var popup_fada06646d52481cbe54fed72cbeee66 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d4666f805b004c8a87d474b16c550271 = $(`<div id="html_d4666f805b004c8a87d474b16c550271" style="width: 100.0%; height: 100.0%;">노원구 측정소</div>`)[0];
+            popup_fada06646d52481cbe54fed72cbeee66.setContent(html_d4666f805b004c8a87d474b16c550271);
+        
+
+        marker_0389f212c39e477c80a3df80d004ccf9.bindPopup(popup_fada06646d52481cbe54fed72cbeee66)
+        ;
+
+        
+    
+</script>
